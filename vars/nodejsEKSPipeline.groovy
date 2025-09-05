@@ -79,7 +79,7 @@ def call(Map configMap){
                         curl -L \
                             -H "Accept: application/vnd.github+json" \
                             -H "Authorization: token ${GITHUB_TOKEN}" \
-                            https://api.github.com/repos/Siva123-siet/catalogue/dependabot/alerts
+                            https://api.github.com/repos/Siva123-siet/${COMPONENT}/dependabot/alerts
                         """,
                         returnStdout: true
                     ).trim()
